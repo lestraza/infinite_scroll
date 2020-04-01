@@ -10,9 +10,13 @@ app.use(bodyParser.json());
 app.get("/api/getData", (req, res) => {
     const skip = req.query.skip
     const take = req.query.take
-    const { data } = db
+    const { data } = db   
     const fragmentData = data.slice(skip, parseInt(take) + parseInt(skip))
-    res.json(fragmentData)
+    const total = data.length
+    res.json({
+        data: fragmentData, 
+        total
+    })
 })
 
 const port = 3001;

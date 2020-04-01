@@ -1,12 +1,52 @@
-html, body, div, input {
+html, body, div, input, table, tr, td, tbody{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 .wrapper {
     margin: 0 auto;
     max-width: 1640px;
     min-height: 100vh;
-    background-color: blanchedalmond;
+    box-sizing: border-box;
+    background-color: #f3f2f3b3;
+    padding-top: 20px;
+    
 }
+.table {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    border-collapse: collapse;
+}
+
+th, td {
+    min-width: 250px;
+    border-bottom: 1px solid #b1b1b1;
+    margin-right: 10px;
+    padding: 8px 0;
+}
+
+th {    
+    text-transform: uppercase;
+    font-size: 18px;
+}
+td {   
+    font-size: 20px;
+    font-weight: normal;
+}
+.paging_container{
+    margin: 0 auto;
+    padding: 30px 10px;
+    position: absolute;
+    right: 45%;
+    display: flex;
+    justify-content: center;
+    color: #00bcd4;
+}
+.paging_container > div {
+    cursor: pointer;
+    padding: 0 10px;
+}
+

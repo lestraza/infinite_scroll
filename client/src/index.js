@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import App from './App.jsx';
 import { Provider } from 'mobx-react'
-import MainStore from './store/mainStore'
+import MainStore from './store/MainStore'
 
 const store = new MainStore()
 
